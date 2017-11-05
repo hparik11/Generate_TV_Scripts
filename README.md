@@ -19,7 +19,19 @@ Embedding size  | 300      |
 Sequence length | 25     |
 Learning rate   | 0.005  |
 
+### Sample Script Generated:
 
-### Let's Have Some Fun
+moe_szyslak:(uneasy) oh, i can't wait till you guys get to uh...
+moe_szyslak: so, uh, you still want to go out?
+maya:(shrugs) that's why i'm here to you guys, mr. smithers, our lives amount.
+moe_szyslak: hey, hey, hey, hey! you said, you saved me.
+marge_simpson:(flustered) oh, no, no. chicks do not like finding out they're being spied on a day...
+homer_simpson:(frightened) denser?!
+marge_simpson: damn straight, my eye! ow! ow! ow! get it out!
+moe_szyslak:(realizing, to phone) it's you...
+moe_szyslak:(nervous) you gotta be kiddin' me. like what?
+carl_carlson:(nods) yeah. that's why i wrap my plums in tin foil.
+seymour_skinner: oh my god, i've never felt so i'm looking for--
+homer_simpson:(morose) oh, what'll i do, moe?
+moe_szyslak: well, i assume i'm not the
 
-Check out the output in a professionally stylized script format! ([Click here](https://github.com/nehal96/Simpsons-Script-Generation/blob/master/Simpson's%20Script%20-%20Queen's%20Elizabeth.pdf) for PDF)
