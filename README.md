@@ -20,11 +20,10 @@ Sequence length | 25     |
 Learning rate   | 0.005  |
 
 ### Sample Script Generated:
-
-moe_szyslak:(uneasy) oh, i can't wait till you guys get to uh...
-moe_szyslak: so, uh, you still want to go out?
-maya:(shrugs) that's why i'm here to you guys, mr. smithers, our lives amount.
-moe_szyslak: hey, hey, hey, hey! you said, you saved me.
+moe_szyslak:(uneasy) oh, i can't wait till you guys get to uh...                                                               
+moe_szyslak: so, uh, you still want to go out?                                                                                 
+maya:(shrugs) that's why i'm here to you guys, mr. smithers, our lives amount.                                                 
+moe_szyslak: hey, hey, hey, hey! you said, you saved me.                                                                       
 marge_simpson:(flustered) oh, no, no. chicks do not like finding out they're being spied on a day...
 homer_simpson:(frightened) denser?!
 marge_simpson: damn straight, my eye! ow! ow! ow! get it out!
