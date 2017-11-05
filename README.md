@@ -34,4 +34,3 @@ carl_carlson:(nods) yeah. that's why i wrap my plums in tin foil.
 seymour_skinner: oh my god, i've never felt so i'm looking for--
 homer_simpson:(morose) oh, what'll i do, moe?
 moe_szyslak: well, i assume i'm not the
-
