@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>dlnd_tv_script_generation</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>tv_script_generation</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,13 +11771,12 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="TV-Script-Generation">TV Script Generation<a class="anchor-link" href="#TV-Script-Generation">&#182;</a></h1><p>In this project, you'll generate your own <a href="https://en.wikipedia.org/wiki/The_Simpsons">Simpsons</a> TV scripts using RNNs.  You'll be using part of the <a href="https://www.kaggle.com/wcukierski/the-simpsons-by-the-data">Simpsons dataset</a> of scripts from 27 seasons.  The Neural Network you'll build will generate a new TV script for a scene at <a href="https://simpsonswiki.com/wiki/Moe&#39;s_Tavern">Moe's Tavern</a>.</p>
-<h2 id="Get-the-Data">Get the Data<a class="anchor-link" href="#Get-the-Data">&#182;</a></h2><p>The data is already provided for you.  You'll be using a subset of the original dataset.  It consists of only the scenes in Moe's Tavern.  This doesn't include other versions of the tavern, like "Moe's Cavern", "Flaming Moe's", "Uncle Moe's Family Feed-Bag", etc..</p>
+<h1 id="TV-Script-Generation">TV Script Generation<a class="anchor-link" href="#TV-Script-Generation">&#182;</a></h1><p>In this project, we'll generate our own <a href="https://en.wikipedia.org/wiki/The_Simpsons">Simpsons</a> TV scripts using RNNs.  We'll be using part of the <a href="https://www.kaggle.com/wcukierski/the-simpsons-by-the-data">Simpsons dataset</a> of scripts from 27 seasons.  The Neural Network we'll build will generate a new TV script for a scene at <a href="https://simpsonswiki.com/wiki/Moe&#39;s_Tavern">Moe's Tavern</a>.</p>
+<h2 id="Get-the-Data">Get the Data<a class="anchor-link" href="#Get-the-Data">&#182;</a></h2><p>We'll be using a subset of the original dataset.  It consists of only the scenes in Moe's Tavern.  This doesn't include other versions of the tavern, like "Moe's Cavern", "Flaming Moe's", "Uncle Moe's Family Feed-Bag", etc..</p>
 
 </div>
 </div>
@@ -11805,8 +11802,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11853,7 +11849,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dataset Stats
@@ -11882,8 +11880,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11940,7 +11937,9 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -11952,8 +11951,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12016,7 +12014,9 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12028,8 +12028,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12055,12 +12054,11 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Check-Point">Check Point<a class="anchor-link" href="#Check-Point">&#182;</a></h1><p>This is your first checkpoint. If you ever decide to come back to this notebook or have to restart the notebook, you can start from here. The preprocessed data has been saved to disk.</p>
+<h1 id="Check-Point">Check Point<a class="anchor-link" href="#Check-Point">&#182;</a></h1><p>This is first checkpoint. If you ever decide to come back to this notebook or have to restart the notebook, you can start from here. The preprocessed data has been saved to disk.</p>
 
 </div>
 </div>
@@ -12085,8 +12083,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12135,7 +12132,9 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>TensorFlow Version: 1.0.0
@@ -12148,8 +12147,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12196,7 +12194,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12208,8 +12208,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12268,7 +12267,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12280,8 +12281,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12324,7 +12324,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12336,8 +12338,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12386,7 +12387,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12398,8 +12401,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12451,7 +12453,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12463,8 +12467,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12554,7 +12557,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12566,8 +12571,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12616,8 +12620,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12667,8 +12670,7 @@ Default GPU Device: /gpu:0
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12724,7 +12726,9 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Epoch   0 Batch    0/5   train_loss = 8.821
@@ -12761,8 +12765,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12788,8 +12791,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12819,8 +12821,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12870,7 +12871,9 @@ Model Trained and Saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12882,8 +12885,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12923,7 +12925,9 @@ Model Trained and Saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12935,8 +12939,7 @@ Model Trained and Saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13005,7 +13008,9 @@ Model Trained and Saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>moe_szyslak:(uneasy) oh, i can&#39;t wait till you guys get to uh...
@@ -13029,13 +13034,11 @@ moe_szyslak: well, i assume i&#39;m not the
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-TV-Script-is-Nonsensical">The TV Script is Nonsensical<a class="anchor-link" href="#The-TV-Script-is-Nonsensical">&#182;</a></h1><p>It's ok if the TV script doesn't make any sense.  We trained on less than a megabyte of text.  In order to get good results, you'll have to use a smaller vocabulary or get more data.  Luckly there's more data!  As we mentioned in the begging of this project, this is a subset of <a href="https://www.kaggle.com/wcukierski/the-simpsons-by-the-data">another dataset</a>.  We didn't have you train on all the data, because that would take too long.  However, you are free to train your neural network on all the data.  After you complete the project, of course.</p>
-<h1 id="Submitting-This-Project">Submitting This Project<a class="anchor-link" href="#Submitting-This-Project">&#182;</a></h1><p>When submitting this project, make sure to run all the cells before saving the notebook. Save the notebook file as "dlnd_tv_script_generation.ipynb" and save it as a HTML file under "File" -&gt; "Download as". Include the "helper.py" and "problem_unittests.py" files in your submission.</p>
+<h1 id="The-TV-Script-is-Nonsensical">The TV Script is Nonsensical<a class="anchor-link" href="#The-TV-Script-is-Nonsensical">&#182;</a></h1><p>It's ok if the TV script doesn't make any sense.  We trained on less than a megabyte of text.  In order to get good results, you'll have to use a smaller vocabulary or get more data.  Luckly there's more data!  As we mentioned in the begging of this project, this is a subset of <a href="https://www.kaggle.com/wcukierski/the-simpsons-by-the-data">another dataset</a>.</p>
 
 </div>
 </div>
